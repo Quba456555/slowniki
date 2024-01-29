@@ -1,4 +1,24 @@
-# slowniki
+# słowniki
+ def display_book(book):
+     print("=" * 50)
+     for key, value in book.items():
+        print(f"{key}: {value}")
+     print("=" * 50)
+
+# Funkcja edytująca dane książki
+def edit_book(book):
+     print("Edytuj dane książki")
+     print("=" * 50)
+     display_book(book)
+     print("=" * 50)
+     key_to_edit = input("Podaj klucz, który chcesz edytować: ")
+     if key_to_edit in book:
+         new_value = input(f"Nowa wartość dla {key_to_edit}: ")
+         book[key_to_edit] = new_value
+         print("Dane zostały zaktualizowane.")
+     else:
+         print("Podany klucz nie istnieje.")
+
 def delete_book(library, book_index):
     if 0 <= book_index < len(library):
         deleted_book = library.pop(book_index)
