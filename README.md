@@ -1,11 +1,11 @@
 # słowniki
- def display_book(book):
-     print("=" * 50)
-     for key, value in book.items():
-        print(f"{key}: {value}")
-     print("=" * 50)
+def display_book(book):
+    print("=" * 50)
+    for key, value in book.items():
+       print(f"{key}: {value}")
+    print("=" * 50)
 
-# Funkcja edytująca dane książki
+# Funkcja do edycji książki
 def edit_book(book):
      print("Edytuj dane książki")
      print("=" * 50)
@@ -28,7 +28,7 @@ def delete_book(library, book_index):
     else:
         print("Podano nieprawidłowy numer książki do usunięcia.")
 
-# Główna pętla programu
+
 library = []  # Lista przechowująca słowniki reprezentujące książki
 
 while True:
